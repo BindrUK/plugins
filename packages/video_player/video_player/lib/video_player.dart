@@ -219,7 +219,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
     this.formatHint,
     this.closedCaptionFile,
     this.videoPlayerOptions,
-    required this.useCache,
+    this.useCache=false,
     this.httpHeaders = const {},
   })  : dataSourceType = DataSourceType.network,
         package = null,
