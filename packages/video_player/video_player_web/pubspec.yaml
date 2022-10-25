@@ -28,7 +28,7 @@ dependencies:
   # workaround for success build checks in PR
     git:
       url: git://github.com/BindrUK/plugins.git
-      ref: test_branch
+      ref: bindr_cache
       path: packages/video_player/video_player_platform_interface
   # video_player_platform_interface: ">=4.2.0 <6.0.0"
 
