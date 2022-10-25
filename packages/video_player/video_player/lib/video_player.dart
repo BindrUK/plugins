@@ -201,7 +201,6 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
       {this.package, this.closedCaptionFile, this.videoPlayerOptions})
       : dataSourceType = DataSourceType.asset,
         formatHint = null,
-        useCache = true,
         httpHeaders = const {},
         super(VideoPlayerValue(duration: Duration.zero));
 
@@ -219,7 +218,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
     this.formatHint,
     this.closedCaptionFile,
     this.videoPlayerOptions,
-    required this.useCache,
+    this.useCache = false,
     this.httpHeaders = const {},
   })  : dataSourceType = DataSourceType.network,
         package = null,
@@ -230,8 +229,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
   /// This will load the file from the file-URI given by:
   /// `'file://${file.path}'`.
   VideoPlayerController.file(
-    File file,
-    this.useCache, {
+    File file, {
     this.closedCaptionFile,
     this.videoPlayerOptions,
   })  : dataSource = 'file://${file.path}',
@@ -278,7 +276,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
   final VideoPlayerOptions? videoPlayerOptions;
 
   /// Use cache for this data source or not. Used only for network data source.
-  final bool useCache;
+  bool useCache = false;
 
   /// Only set for [asset] videos. The package that the asset was loaded from.
   final String? package;
