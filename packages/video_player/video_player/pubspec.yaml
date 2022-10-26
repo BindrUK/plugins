@@ -25,7 +25,7 @@ dependencies:
 #    path: ../video_player_platform_interface
   # workaround for success build checks in PR
     git:
-      url: git://github.com/BindrUK/plugins.git
+      url: https://github.com/BindrUK/plugins.git
       ref: bindr_cache
       path: packages/video_player/video_player_platform_interface
   # The design on https://flutter.dev/go/federated-plugins was to leave
@@ -37,7 +37,7 @@ dependencies:
 #    path: ../video_player_web
     # workaround for success build checks in PR
     git:
-      url: git://github.com/BindrUK/plugins.git
+      url: https://github.com/BindrUK/plugins.git
       ref: bindr_cache
       path: packages/video_player/video_player_web
 
