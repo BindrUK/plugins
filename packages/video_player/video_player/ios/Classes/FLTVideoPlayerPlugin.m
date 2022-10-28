@@ -365,9 +365,9 @@ static inline CGFloat radiansToDegrees(CGFloat radians) {
       return;
     }
     // The player may be initialized but still needs to determine the duration.
-    if ([self duration] == 0) {
-      return;
-    }
+    // if ([self duration] == 0) {
+    //   return;
+    // }
 
     _isInitialized = true;
     _eventSink(@{
@@ -585,9 +585,7 @@ static inline CGFloat radiansToDegrees(CGFloat radians) {
 //                                                                 .alphanumericCharacterSet];
 
       player = [[FLTVideoPlayer alloc] initWithURL:[NSURL URLWithString:input.uri]
-                                      frameUpdater:frameUpdater
-                                        enableCache:enableCache
-                                       httpHeaders:input.httpHeaders];
+                                      frameUpdater:frameUpdater enableCache:YES httpHeaders:input.httpHeaders];
     } else {
       player = [[FLTVideoPlayer alloc] initWithURL:[NSURL URLWithString:input.uri]
                                       frameUpdater:frameUpdater enableCache:NO httpHeaders:input.httpHeaders];
