@@ -1,4 +1,4 @@
-# Video Player plugin for Flutter
+<!-- # Video Player plugin for Flutter
 
 [![pub package](https://img.shields.io/pub/v/video_player.svg)](https://pub.dev/packages/video_player)
 
@@ -134,4 +134,4 @@ and so on.
 
 To learn about playback speed limitations, see the [`setPlaybackSpeed` method documentation](https://pub.dev/documentation/video_player/latest/video_player/VideoPlayerController/setPlaybackSpeed.html).
 
-Furthermore, see the example app for an example playback speed implementation.
+Furthermore, see the example app for an example playback speed implementation. -->
