@@ -234,7 +234,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
   final VideoPlayerOptions? videoPlayerOptions;
 
   /// Use cache for this data source or not. Used only for network data source.
-  final bool useCache;
+  bool useCache = false;
 
   /// Only set for [asset] videos. The package that the asset was loaded from.
   final String? package;
